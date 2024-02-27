@@ -1,0 +1,66 @@
+body {
+    font-family: Roboto, Arial;
+    background-color: rgb(235, 235, 235);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    margin: 50px auto;
+    padding: 10px 30px 10px 30px;
+    max-width: 600px;
+}
+
+.container:hover {
+    box-shadow: 0 3px 10px rgb(214, 212, 212);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.selectionContainer,
+.searchContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 550;
+    margin-right: 8px;
+}
+
+select,
+input[type="text"] {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    outline: none;
+    height: 24px;
+}
+
+button {
+    width: 56px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    font-size: 10px;
+    border: none;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:active {
+    opacity: 0.5;
+}

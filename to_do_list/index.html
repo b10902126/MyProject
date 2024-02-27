@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background: linear-gradient(135deg, #5076c0, #9645aa);
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+        
+        .inner-wrapper {
+            padding-top: 40px;
+            background-color: white ;
+            display: flex;
+            flex-direction: column ;
+            align-items: center;
+            min-width: 400px;
+            border: none;
+            border-radius: 12px;
+        }
+
+        h2 {
+            margin-top: -20px;
+            display: block;
+        }
+
+        .enter-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #edeef0;
+            
+            border-radius: 20px;
+        }
+
+        .input-item {
+            background-color: #edeef0;
+            border-radius: 20px;
+            height: 24px;
+            border: none;
+            padding: 0px 20px 0px 10px;
+        }
+
+        .list {
+             list-style: none;
+             padding: 0px;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             gap: 2px;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 6px;
+        }
+
+        label {
+            margin-left: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .delete {
+            position: absolute;
+            right: 0px;
+        }
+
+        .checked-item {
+            text-decoration: line-through;
+        }
+
+        #check:checked {
+            accent-color: rgb(190, 192, 245);
+            opacity: 0.8;
+        }
+
+        .add-button {
+            margin-left: 12px;
+            background-color: #ff5945;
+            border-radius: 20px;
+            width: 36px;
+            height: 24px;
+            border: none;
+            padding: 120px auto;
+            font-weight: 500;
+        }
+
+        .delete-button {
+            background-color: rgb(190, 192, 245);
+            position: absolute;
+            right: -1px;
+            border-radius: 30px;
+            padding: 0px -4px;
+            border: none;
+            font-weight: 650;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        button:active {
+            background-color: black;
+            color: white;
+        }
+
+        input:hover {
+            opacity: 0.7;
+        }
+    </style>
+
+    <script src="practice.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-wrapper">
+            <h2>To-Do-List</h2>
+            <form action="" class="input-wrapper" id="input-wrapper">
+                <div class="enter-block">
+                    <input type="text" id="input-item" placeholder="enter a task" class="input-item">
+                    <button class="add-button" id="add">Add</button>
+                </div>
+                <div>
+                    <ul class="list" id="list"></ul>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
