@@ -1,1 +1,1 @@
-# MyProject
+Side Project and Practice
