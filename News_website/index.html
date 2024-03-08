@@ -16,6 +16,7 @@
         <div class="selectionContainer">
             <label for="category">Choose Category: </label>
             <select name="category" id="category">
+                <option value="-">-</option>
                 <option value="business">Business</option>
                 <option value="entertainment">Entertainment</option>
                 <option value="health">Health</option>
@@ -24,11 +25,12 @@
             </select>
             <button class="search-bottom" id="search-category">Search</button>
         </div>
-
         <div class="searchContainer">
-            <input class="search-input" type="text" name="" id="" placeholder="search for news...">
+            <input class="search-input" type="text" name="" placeholder="search for news..." id="search-box">
             <button class="search-bottom" id="search-keyword">Search</button>
         </div>
+
+        <div class="news-container" id="news-container"></div>
     </div>
 
     <script src="script.js"></script>
